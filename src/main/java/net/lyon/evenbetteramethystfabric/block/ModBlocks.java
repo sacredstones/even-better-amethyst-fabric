@@ -89,7 +89,13 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Identifier.of(EvenBetterAmethystFabric.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(ModBlocks.CHISELED_AMETHYST_CRYSTAL_BLOCK);
+        });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> {
+                    entries.add(ModBlocks.AMETHYST_REDSTONE_LAMP);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(ModBlocks.AMETHYST_REDSTONE_LAMP);
         });
 
