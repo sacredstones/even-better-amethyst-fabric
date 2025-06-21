@@ -93,12 +93,14 @@ public class ModBlocks {
             entries.add(ModBlocks.CHISELED_AMETHYST_CRYSTAL_BLOCK);
             entries.add(ModBlocks.SMOOTH_AMETHYST_CRYSTAL_BLOCK);
             entries.add(ModBlocks.AMETHYST_CRYSTAL_BLOCK);
+
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> {
-                    entries.add(ModBlocks.AMETHYST_REDSTONE_LAMP);
+            entries.add(ModBlocks.AMETHYST_REDSTONE_LAMP);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(ModBlocks.AMETHYST_REDSTONE_LAMP);
+            entries.add(ModBlocks.AMETHYST_CRYSTAL_LAMP);
         });
 
     }
