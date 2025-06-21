@@ -91,6 +91,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.CHISELED_AMETHYST_CRYSTAL_BLOCK);
+            entries.add(ModBlocks.SMOOTH_AMETHYST_CRYSTAL_BLOCK);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> {
                     entries.add(ModBlocks.AMETHYST_REDSTONE_LAMP);
