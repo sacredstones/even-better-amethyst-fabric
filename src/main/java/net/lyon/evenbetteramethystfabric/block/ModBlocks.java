@@ -76,9 +76,50 @@ public class ModBlocks {
                             .mapColor(MapColor.PURPLE)
                             .allowsSpawning(Blocks::always)
 
-
             )
     );
+
+    public static final Block AMETHYST_BRICKS = registerBlock("amethyst_bricks",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .strength(1.5f, 6f)
+                            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                            .mapColor(MapColor.PURPLE)
+                            .requiresTool()
+                            .solid()
+            )
+    );
+
+    public static final Block AMETHYST_BRICK_SLAB = registerBlock("amethyst_brick_slab",
+            new SlabBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.PURPLE)
+                            .strength(1.5f, 6f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+            )
+    );
+
+    public static final Block AMETHYST_BRICK_STAIRS = registerBlock("amethyst_brick_stairs",
+            new StairsBlock(ModBlocks.AMETHYST_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.PURPLE)
+                            .strength(1.5f, 6f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+            )
+    );
+
+    public static final Block AMETHYST_BRICK_WALL = registerBlock("amethyst_brick_wall",
+            new WallBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.PURPLE)
+                            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                            .strength(1.5f, 6f)
+                            .requiresTool()
+            )
+    );
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -93,6 +134,10 @@ public class ModBlocks {
             entries.add(ModBlocks.CHISELED_AMETHYST_CRYSTAL_BLOCK);
             entries.add(ModBlocks.SMOOTH_AMETHYST_CRYSTAL_BLOCK);
             entries.add(ModBlocks.AMETHYST_CRYSTAL_BLOCK);
+            entries.add(ModBlocks.AMETHYST_BRICKS);
+            entries.add(ModBlocks.AMETHYST_BRICK_SLAB);
+            entries.add(ModBlocks.AMETHYST_BRICK_STAIRS);
+            entries.add(ModBlocks.AMETHYST_BRICK_WALL);
 
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> {
