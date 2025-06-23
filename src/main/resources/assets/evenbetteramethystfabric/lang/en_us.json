@@ -3,5 +3,9 @@
   "block.evenbetteramethystfabric.smooth_amethyst_crystal_block": "Smooth Amethyst Crystal Block",
   "block.evenbetteramethystfabric.amethyst_crystal_block": "Amethyst Crystal Block",
   "block.evenbetteramethystfabric.amethyst_crystal_lamp": "Amethyst Crystal Lamp",
-  "block.evenbetteramethystfabric.amethyst_redstone_lamp": "Amethyst Redstone Lamp"
+  "block.evenbetteramethystfabric.amethyst_redstone_lamp": "Amethyst Redstone Lamp",
+  "block.evenbetteramethystfabric.amethyst_bricks": "Amethyst Bricks",
+  "block.evenbetteramethystfabric.amethyst_brick_slab": "Amethyst Brick Slab",
+  "block.evenbetteramethystfabric.amethyst_brick_stairs": "Amethyst Brick Stairs",
+  "block.evenbetteramethystfabric.amethyst_brick_wall": "Amethyst Brick Wall"
 }
