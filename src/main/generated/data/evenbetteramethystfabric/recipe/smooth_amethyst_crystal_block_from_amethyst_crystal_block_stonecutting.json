@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "evenbetteramethystfabric:amethyst_crystal_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "evenbetteramethystfabric:smooth_amethyst_crystal_block"
+  }
+}

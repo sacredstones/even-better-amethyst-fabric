@@ -20,6 +20,10 @@
 		],
 		"fabric-datagen": [
 			"net.lyon.evenbetteramethystfabric.EvenBetterAmethystFabricDataGenerator"
+		],
+
+		"client": [
+			"net.lyon.evenbetteramethystfabric.EvenBetterAmethystFabricClient"
 		]
 	},
 	"mixins": [

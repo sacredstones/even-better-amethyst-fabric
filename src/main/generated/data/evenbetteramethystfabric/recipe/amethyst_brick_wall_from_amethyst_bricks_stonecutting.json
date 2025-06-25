@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "evenbetteramethystfabric:amethyst_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "evenbetteramethystfabric:amethyst_brick_wall"
+  }
+}

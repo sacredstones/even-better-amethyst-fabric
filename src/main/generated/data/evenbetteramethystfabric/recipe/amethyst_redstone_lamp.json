@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "evenbetteramethystfabric:amethyst_crystal_lamp"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " R ",
+    "RLR",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "evenbetteramethystfabric:amethyst_redstone_lamp"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "evenbetteramethystfabric:block/amethyst_bricks"
+  }
+}
