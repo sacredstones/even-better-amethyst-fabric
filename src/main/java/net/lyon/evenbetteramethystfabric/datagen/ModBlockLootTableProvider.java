@@ -3,6 +3,7 @@ package net.lyon.evenbetteramethystfabric.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.lyon.evenbetteramethystfabric.block.ModBlocks;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -23,6 +24,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AMETHYST_BRICK_SLAB, slabDrops(ModBlocks.AMETHYST_BRICK_SLAB));
         addDrop(ModBlocks.AMETHYST_BRICK_STAIRS);
         addDrop(ModBlocks.AMETHYST_BRICK_WALL);
+
+        addDropWithSilkTouch(Blocks.BUDDING_AMETHYST);
 
 
     }
